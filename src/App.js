@@ -14,8 +14,6 @@ import api from "./services/api";
 
 export default function App() {
   const [repositories, setRepositories] = useState([]);
-  const [likes, setLikes] = useState(0);
-  const [techs, setTechs] = useState([]);
 
   useEffect(() => {
     api.get("repositories").then((response) => {
